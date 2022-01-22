@@ -1,0 +1,24 @@
+{
+  "name": "hyperlit-dom-expressions",
+  "description": "A Fine-Grained Rendering Runtime HyperScript API using dynamic function generation",
+  "version": "0.20.11",
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ryansolid/dom-expressions/blob/master/packages/hyperlit-dom-expressions"
+  },
+  "main": "lib/hyperlit-dom-expressions.js",
+  "module": "dist/hyperlit-dom-expressions.js",
+  "types": "types/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "rollup -c && tsc",
+    "test": "npm run build && jest",
+    "test:coverage": "npm run build && jest --coverage",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "dom-expressions": "^0.20.11"
+  }
+}
